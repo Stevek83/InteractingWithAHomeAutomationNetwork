@@ -35,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157941F0157940D000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		17621E4017621AD000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 		C23788C32183AE4B00F7BF74 /* AccessoryFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessoryFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23788C62183AE4B00F7BF74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C23788C82183AE4B00F7BF74 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -64,8 +66,6 @@
 		C2B10F23219DD35A002E2316 /* HomeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStore.swift; sourceTree = "<group>"; };
 		C2B10F25219DD851002E2316 /* BridgedAccessoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgedAccessoryCell.swift; sourceTree = "<group>"; };
 		C2B10F27219E1E5F002E2316 /* NameEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameEditor.swift; sourceTree = "<group>"; };
-		E5D74BA0E5D5131000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		E5F53250E5F5424000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		157948B015794AB000000001 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				157941F0157940D000000001 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		176217F0176215F000000001 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				17621E4017621AD000000001 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
 		C23788BA2183AE4B00F7BF74 = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +104,8 @@
 				C23788C52183AE4B00F7BF74 /* AccessoryFinder */,
 				C23788C42183AE4B00F7BF74 /* Products */,
 				C23788DD2183AF1B00F7BF74 /* Frameworks */,
-				E5D5F130E5D6ED8000000001 /* Configuration */,
-				E5F54200E5F5400000000001 /* LICENSE */,
+				157948B015794AB000000001 /* Configuration */,
+				176217F0176215F000000001 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,23 +206,6 @@
 			path = Editors;
 			sourceTree = "<group>";
 		};
-		E5D5F130E5D6ED8000000001 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				E5D74BA0E5D5131000000001 /* SampleCode.xcconfig */,
-			);
-			name = Configuration;
-			sourceTree = "<group>";
-		};
-		E5F54200E5F5400000000001 /* LICENSE */ = {
-			isa = PBXGroup;
-			children = (
-				E5F53250E5F5424000000001 /* LICENSE.txt */,
-			);
-			name = LICENSE;
-			path = LICENSE;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,6 +239,7 @@
 				TargetAttributes = {
 					C23788C22183AE4B00F7BF74 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.HomeKit = {
 								enabled = 1;
@@ -331,7 +332,7 @@
 /* Begin XCBuildConfiguration section */
 		C23788D52183AE4D00F7BF74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5D74BA0E5D5131000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 157941F0157940D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -393,7 +394,7 @@
 		};
 		C23788D62183AE4D00F7BF74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5D74BA0E5D5131000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 157941F0157940D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -449,7 +450,7 @@
 		};
 		C23788D82183AE4D00F7BF74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5D74BA0E5D5131000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 157941F0157940D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AccessoryFinder/AccessoryFinder.entitlements;
@@ -463,14 +464,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AccessoryFinder${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C23788D92183AE4D00F7BF74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5D74BA0E5D5131000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 157941F0157940D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AccessoryFinder/AccessoryFinder.entitlements;
@@ -484,7 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AccessoryFinder${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
