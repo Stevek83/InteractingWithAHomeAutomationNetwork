@@ -7,7 +7,7 @@ Enables editing a name field.
 
 import UIKit
 
-protocol NameEditDelegate: class {
+protocol NameEditDelegate: AnyObject {
     func updateName(_ name: String)
 }
 
